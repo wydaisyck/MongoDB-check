@@ -46,7 +46,7 @@ if __name__ == '__main__':
                   "wind_hsc_summary_day"
                   ]
 
-    check = Check_Mongo(server="192.168.1.119", port=27017, user='wangyidan', passwd='wangyidan321', table_list=daily_list, date=get_date)
+    check = Check_Mongo(server="192.168.1.119", port=27017, user='user', passwd='user321', table_list=daily_list, date=get_date)
     check.loop_table()
     end = time.time()
     print("time:", end - start)
